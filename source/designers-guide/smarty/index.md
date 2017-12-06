@@ -126,7 +126,7 @@ class Theme extends \Shopware\Components\Theme
 
 ### Inheritance and plugin templates
 <img src="/designers-guide/smarty/injectBeforePlugins.jpg" alt="Inheritance and plugin templates" style="width: 400px; float: right; margin:0 0 0 40px;" />
-The plugins installed to your shop have a special position in the order of the inheritance system. All plugin templates are processed after the templates of the core themes. You can decide if your theme should be processed before or after the plugin templates by setting the `$injectBeforePlugins` variable in your `Theme.php` file. If you want to create a normal theme, which can be purchased in the shopware community store, the value should be set to `true`, so your theme is processed before the plugins. This ensures that all plugins can be used with your theme. When you want to make some local changes to specific plugins, you can set the value to `false` for extending the plugin templates.
+The plugins installed to your shop have a special position in the order of the inheritance system. All plugin templates are processed after the templates of the core themes. You can decide if your theme should be processed before or after the plugin templates by setting the `$injectBeforePlugins` variable in your `Theme.php` file. If you want to create a normal theme, which can be purchased in the shopware community store, the value should be set to `true`, so your theme is processed before the plugins. This ensures that all plugins can be used with your theme. When you want to make some local changes to specific plugins, you can set the value to `false` for extending the plugin templates. Default value is set to FALSE. 
 
 ```php
 class Theme extends \Shopware\Components\Theme
